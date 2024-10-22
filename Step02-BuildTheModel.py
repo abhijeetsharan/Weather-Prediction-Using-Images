@@ -35,7 +35,7 @@ val_data_set = val_datagen.flow_from_directory(VALIDATION_DIR,
 callback = EarlyStopping(monitor='val_loss', patience=5, verbose=1, mode='auto')
 
 #if we find a better model during training we would like to save a fresh copy
-best_model_file_path = "C:\Users\devil\OneDrive\Desktop\PROJECTS\Weather Prediction using Images\BestWeatherModel.keras"
+best_model_file_path = "C:/Users/devil/OneDrive/Desktop/PROJECTS/Weather Prediction using Images/bestWeatherModel.keras"
 
 best_model = ModelCheckpoint(best_model_file_path, monitor="val_accuracy", verbose=1, save_best_only=True)
 
@@ -104,5 +104,5 @@ plt.show()
 
 
 #save the model if there was not early stopping
-model.save('C:\Users\devil\OneDrive\Desktop\PROJECTS\Weather Prediction using Images\BestWeatherModel2.keras')
+model.save('C:/Users/devil/OneDrive/Desktop/PROJECTS/Weather Prediction using Images/bestWeatherModel2.keras')
 
